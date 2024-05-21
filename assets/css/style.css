@@ -1,0 +1,350 @@
+@media (max-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    place-items: center;
+    height: 100vh;
+  }
+  .main-title {
+    grid-row: 1;
+  }
+  .menu-list {
+    grid-row: 2;
+  }
+  .photo {
+    grid-row: 3;
+  }
+  img {
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+  }
+  .descr-rus {
+    grid-row: 4;
+  }
+  .descr-esp {
+    grid-row: 5;
+  }
+  .contacts {
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contacts img,
+  .contacts i {
+    margin: 0 10px; /* Espaciado entre íconos si es necesario */
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .menu {
+    display: none; /* Asegurarse de que el menú esté oculto por defecto en móvil */
+    background-color: white; /* Color de fondo del menú desplegable */
+    position: relative; /* Para que se superponga al contenido */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-list li a {
+    color: black; /* Color del texto del menú */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  /* Mostrar menú cuando está activo */
+  .menu.active {
+    display: block;
+  }
+
+  .source-code-pro {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+  // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 200 to 800
+
+  .plus-jakarta-sans {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  .quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  body {
+    font-family: "Source Code Pro", monospace;
+  }
+  .saludo {
+    text-align: center;
+    font-weight: 900;
+  }
+  .descr-rus,
+  .descr-esp {
+    padding: 20px;
+    font-weight: 500;
+  }
+  i {
+    color: black;
+    font-size: 30px;
+  }
+
+  .main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Ajusta la altura según tus necesidades */
+    font-family: "Quicksand", sans-serif;
+  }
+  .btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    font-family: "Source Code Pro", monospace;
+  }
+
+  .btn:hover {
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 50%;
+    color: black;
+    font-weight: 500;
+    font-family: "Source Code Pro", monospace;
+    width: 170px;
+    height: 170px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .contacts {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  img {
+    opacity: 0.7;
+    transition: 0.7s opacity;
+  }
+
+  img:hover {
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+
+/*DESKTOP*/
+
+@media (min-width: 577px) {body {
+    margin: 0;
+    font-family: "Source Code Pro", monospace;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+      "header header"
+      "sidebar main"
+      "footer footer";
+    height: 100vh;
+  }
+  
+  header {
+    grid-area: header;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  sidebar {
+    grid-area: sidebar;
+  color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    grid-area: main;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-list li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .btn {
+    
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: none;
+        background: black;
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1;
+        padding:5px;
+        font-family: "Source Code Pro", monospace;
+     
+      }
+      .btn:hover {
+        background-color: white;
+        border: solid 1px black;
+        border-radius: 50%;
+        color: black;
+        font-weight: 500;
+        font-family: "Source Code Pro", monospace;
+        width: 170px;
+        height: 170px;
+      }
+  
+  
+  .photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+   
+    
+  }
+
+  .photo {
+    display: grid;
+    place-items: center; /* Centra horizontal y verticalmente */
+    height: 100vh; /* Asegura que el contenedor tenga una altura suficiente */
+  }
+
+  
+  .saludo {
+    font-weight: bold;
+  }
+  
+  .parrafo {
+    margin: 1rem 0;
+  }
+  
+  .contacts a {
+    color: black;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  .contacts a i {
+    font-size: 2rem;
+    color: black;}
+    .saludo {
+        text-align: center;
+        font-weight: 900;
+      }
+      .descr-rus,
+      .descr-esp {
+        padding: 20px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .parrafo span {
+        transition: color 0.3s ease;
+      }
+      
+      .parrafo:hover span:nth-child(1) { color: blue; }
+      .parrafo:hover span:nth-child(2) { color: yellow; }
+      .parrafo:hover span:nth-child(3) { color: pink; }
+      .parrafo:hover span:nth-child(4) { color: green; }
+      .parrafo:hover span:nth-child(5) { color: black; }
+      .parrafo:hover span:nth-child(6) { color: red; }
+      .parrafo:hover span:nth-child(7) { color: blue; }
+      .parrafo:hover span:nth-child(8) { color: yellow; }
+      .parrafo:hover span:nth-child(9) { color: pink; }
+      .parrafo:hover span:nth-child(10) { color: green; }
+      .parrafo:hover span:nth-child(11) { color: black; }
+      .parrafo:hover span:nth-child(12) { color: red; }
+      .parrafo:hover span:nth-child(13) { color: blue; }
+      .parrafo:hover span:nth-child(14) { color: yellow; }
+      .parrafo:hover span:nth-child(15) { color: pink; }
+      .parrafo:hover span:nth-child(16) { color: green; }
+      .parrafo:hover span:nth-child(17) { color: black; }
+      .parrafo:hover span:nth-child(18) { color: red; }
+      .parrafo:hover span:nth-child(19) { color: blue; }
+      .parrafo:hover span:nth-child(20) { color: yellow; }
+      .parrafo:hover span:nth-child(21) { color: pink; }
+      .parrafo:hover span:nth-child(22) { color: green; }
+      .parrafo:hover span:nth-child(23) { color: black; }
+      .parrafo:hover span:nth-child(24) { color: red; }
+      .parrafo:hover span:nth-child(25) { color: blue; }
+      .parrafo:hover span:nth-child(26) { color: yellow; }
+      .parrafo:hover span:nth-child(27) { color: pink; }
+      .parrafo:hover span:nth-child(28) { color: green; }
+      .parrafo:hover span:nth-child(29) { color: black; }
+      .parrafo:hover span:nth-child(30) { color: red; }
+      .parrafo:hover span:nth-child(31) { color: blue; }
+      .parrafo:hover span:nth-child(32) { color: yellow; }
+      .parrafo:hover span:nth-child(33) { color: pink; }
+      .parrafo:hover span:nth-child(34) { color: green; }
+      .parrafo:hover span:nth-child(35) { color: black; }
+      .parrafo:hover span:nth-child(36) { color: red; }
+
+
+      
+  }
+  
+  
+
+

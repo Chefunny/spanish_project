@@ -1,0 +1,208 @@
+@media (max-width: 576px) {body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .tarjeta {
+    background:rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tarjeta .name {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .tarjeta audio {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .tarjeta div[class*="-"] {
+    display: none;
+  }
+  
+  .tarjeta:hover div[class*="-"] {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 0.5%;
+  }
+  
+  .tarjeta:hover p {
+    margin: 0;
+  }
+  
+  .main-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .home {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .home a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+  }
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.quicksand{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.name > p {
+    font-weight: 700;
+}
+  }
+  
+
+  /*DESKTOP*/
+@media (min-width: 577px) { 
+  body {
+    margin: 0;
+    padding: 30px;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  .header, .footer {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+  }
+  
+ 
+  
+  .tarjeta {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tarjeta .name {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .tarjeta audio {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .tarjeta div[class*="-"] {
+    display: none;
+  }
+  
+  .tarjeta:hover div[class*="-"] {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 0.5%;
+  }
+  
+  .tarjeta:hover p {
+    margin: 0;
+  }
+  
+  .main-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .home {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .home a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+  }
+
+  .quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .name > p {
+    font-weight: 700;
+  }
+
+  .tarjetas {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+    
+  }
+
+  footer{
+    height: 100vh;
+  }
+}
+
+  
